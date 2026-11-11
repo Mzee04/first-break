@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Saturday workshop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      :root { color: #1c1915; background: #f7f3ec; }
+      body { font: 1.125rem/1.5 Georgia, serif; margin: 0; }
+      main { max-width: 36rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+      h1 { font-size: 2.25rem; line-height: 1.1; margin-bottom: 0.5rem; }
+      h3 { margin-top: 2rem; }
+      form { display: grid; gap: 0.75rem; margin-top: 1.5rem; }
+      label { font-size: 0.95rem; }
+      input { font: inherit; padding: 0.55rem 0.7rem; border: 1px solid #c8bba8; border-radius: 0.4rem; }
+      .actions { display: flex; gap: 0.5rem; align-items: center; }
+      button { font: inherit; border-radius: 999px; padding: 0.55rem 0.9rem; border: 1px solid #1c1915; background: #1c1915; color: #f7f3ec; }
+      button.ghost { background: transparent; color: #1c1915; }
+      .note { margin-top: 2.5rem; color: #5c5346; font-size: 0.9rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Saturday workshop</h1>
+      <p>A free afternoon session. Twelve seats. Bring a notebook.</p>
+      <h3>What to bring</h3>
+      <ul>
+        <li>A notebook</li>
+        <li>One question you have been sitting on</li>
+      </ul>
+      <form action="#stay">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" />
+        <div class="actions">
+          <button type="submit" id="go">
+            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" focusable="false">
+              <path d="M2 8h12M10 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </button>
+          <button type="button" class="ghost">Notify me</button>
+        </div>
+      </form>
+      <p class="note">Demo page for First Break. Nothing is sent anywhere.</p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --color-paper: #f3eee6;
+  --color-ink: #1c1915;
+  --color-break: #9a3412;
+  --color-mark: #c2410c;
+  --color-pass: #3f6212;
+  --color-line: #e4d9c8;
+  --color-card: #fffaf3;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: 0.4rem;
+  --radius-md: 0.7rem;
+  --radius-lg: 1rem;
+}
+
+:root {
+  --background: #f3eee6;
+  --foreground: #1c1915;
+  --primary: #1c1915;
+  --primary-foreground: #f3eee6;
+  --secondary: #e7dccb;
+  --secondary-foreground: #1c1915;
+  --muted: #e7dccb;
+  --muted-foreground: #5c5346;
+  --accent: #f6e7d8;
+  --accent-foreground: #1c1915;
+  --destructive: #9a3412;
+  --border: #d9cdb8;
+  --input: #c8bba8;
+  --ring: #9a3412;
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+::selection {
+  background: #f6d3bf;
+}

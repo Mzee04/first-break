@@ -25,6 +25,7 @@ const TYPES: Record<string, string> = {
   ".png": "image/png",
   ".json": "application/json; charset=utf-8",
   ".ico": "image/x-icon",
+  ".mp4": "video/mp4",
 }
 
 function send(res: ServerResponse, status: number, body: unknown): void {
